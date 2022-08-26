@@ -1,3 +1,5 @@
 #!/bin/bash
 
-gradle clean test --info
+gradle runIntuitive
+gradle runMainFunctionBuilder
+gradle runSpringIoc
