@@ -5,7 +5,7 @@ import kotlin.test.assertEquals
 
 class SimplePrimerNumberGeneratorTest {
 
-    private val simplePrimeNumberUtils = SimplePrimeNumberUtils()
+    private val primeNumberUtils: PrimeNumberUtils = SimplePrimeNumberUtils()
 
     @Test
     fun numbersFromMinusTenToOneShouldNotBePrime() {
@@ -28,7 +28,7 @@ class SimplePrimerNumberGeneratorTest {
     private fun forAllNumbersInListExpectIsPrimeResult(numberList: List<Int>, expected: Boolean){
         numberList.forEach {
             println("Current number to be tested is: $it")
-            assertEquals(expected, simplePrimeNumberUtils.isPrime(it))
+            assertEquals(expected, primeNumberUtils.isPrime(it))
         }
     }
 
